@@ -1,4 +1,48 @@
 
+function mapToNegativize(sourceArray) {
+
+    let newArray = []
+
+   let result = sourceArray.forEach(element => {
+    let result = element * -1
+    newArray.push(result)
+    
+    })
+    return newArray
+}
+
+function mapToNoChange(sourceArray) {
+    let newArray = []
+
+    sourceArray.forEach(name => {
+        newArray.push(name)
+    })
+
+    return newArray
+}
+
+function mapToDouble(sourceArray) {
+    let doubledArray = []
+
+    let iteration = sourceArray.forEach(number => {
+        let double = number * 2
+
+        doubledArray.push(double)
+    })
+    return doubledArray
+}
+
+function mapToSquare(sourceArray) {
+    let squaredArray = []
+
+    sourceArray.forEach(number => {
+        let square = Math.pow(number, 2)
+        squaredArray.push(square)
+    })
+    return squaredArray
+}
+
+
 
 // starting point = 100, source array = [1, 2, 3]
 // returns a running total when not given a starting point 
